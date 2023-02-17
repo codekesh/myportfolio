@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: "Signika Negative", sans-serif;
 }
 
 .navbar {
@@ -40,7 +40,6 @@
 
 .nav-link:hover {
     border-bottom: 4px solid #1e375a;
-    transition-duration: 0.3s;
 }
 
 .resume {
@@ -52,19 +51,19 @@
     background: none;
 }
 
-.resume a{
+.resume a {
     text-decoration: none;
     color: #1e375a;
 }
 
-.resume:hover{
+.resume:hover {
     opacity: 0.75;
 }
 
 .home {
     width: 100%;
     height: 760px;
-    background-image: url('./components/images/pexels-bri-schneiter-346529.jpg');
+    background-image: url("./components/images/pexels-bri-schneiter-346529.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -127,11 +126,12 @@ h2 {
     border-radius: 35px;
     box-shadow: 0 0px 10px 3px rgba(30, 55, 90, 0.5);
     color: white;
+    transition: 0.3s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.2);
-    transition-duration: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .connect {
@@ -197,7 +197,7 @@ h2 {
     border-radius: calc(var(--curve) * 1px);
     background-color: var(--surface-color);
     transform: translateY(100%);
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .card-link:hover .card__overlay {
@@ -212,7 +212,7 @@ h2 {
     border-radius: calc(var(--curve) * 1px) 0 0 0;
     background-color: var(--surface-color);
     transform: translateY(-100%);
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .card-link:hover .card__header {
@@ -221,7 +221,7 @@ h2 {
 
 .card__title {
     font-size: 1.5em;
-    margin: 0 0 .3em;
+    margin: 0 0 0.3em;
     color: #1e375a;
 }
 
@@ -255,7 +255,6 @@ h2 {
 
 .footer-link:hover {
     border-bottom: 5px solid #1e375a;
-    transition-duration: 0.3s;
 }
 
 .copy {
@@ -263,7 +262,7 @@ h2 {
     font-size: 20px;
     opacity: 0.8;
     position: relative;
-    right: 30px
+    right: 30px;
 }
 
 .name {
