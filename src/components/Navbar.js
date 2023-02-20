@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 function Navbar() {
     const logo = require('./images/profile.jpeg')
-    const resume="https://drive.google.com/file/d/1l8lbUKbLLoopu77yyqe-qAqiTew8QP-x/view"
+    const resume="https://drive.google.com/file/d/1wfBVmDB314AGzFQjhgxOO7xvUKJXAmPL/view"
     return (
         <div className="navbar">
             <NavLink to="/">
