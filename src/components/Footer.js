@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 function Footer() {
     const year = new Date().getFullYear();
     const logo=require('./images/download.jpg')
-    const resume="https://drive.google.com/file/d/1l8lbUKbLLoopu77yyqe-qAqiTew8QP-x/view"
     return (
         <div className="footer">
             <p className="copy">Copyright ⓒ <NavLink to="/" className="name">Keshav Tulsyan</NavLink> {year}</p>

@@ -250,23 +250,12 @@ h2 {
     padding: 0px 10%;
 }
 
-.footer-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: #1e375a;
-    padding: 0px 30px;
-}
-
-.footer-link:hover {
-    border-bottom: 5px solid #1e375a;
-}
-
 .copy {
     color: #1e375a;
     font-size: 20px;
     opacity: 0.8;
-    position: relative;
-    right: 30px;
+    display: block;
+    margin: auto;
 }
 
 .name {
@@ -282,7 +271,6 @@ h2 {
 .location {
     text-decoration: none;
     font-size: 20px;
-    padding-left: 27%;
     display: flex;
     align-items: center;
 }
