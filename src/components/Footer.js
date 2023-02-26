@@ -8,10 +8,6 @@ function Footer() {
     return (
         <div className="footer">
             <p className="copy">Copyright ⓒ <NavLink to="/" className="name">Keshav Tulsyan</NavLink> {year}</p>
-            <NavLink className="footer-link" to='/'>Home</NavLink>
-            <NavLink className="footer-link" to='projects' >Projects</NavLink>
-            <NavLink className="footer-link" to='work'>Work</NavLink>
-            <a className="footer-link" href={resume} target="_blank" rel="noreferrer">Resume</a>
             <a className="location" href="https://en.wikipedia.org/wiki/India" target="_blank" rel="noreferrer">
                 <img src={logo} alt="India" />
                 <span className="place">India</span>
