@@ -14,7 +14,7 @@ function Navbar() {
                 <NavLink className="nav-link" to='projects' >Projects</NavLink>
                 <NavLink className="nav-link" to='work'>Work</NavLink>
                 <button className="resume">
-                <a  href={resume} target="_blank" rel="noreferrer">Resume</a>
+                <a href={resume} target="_blank" rel="noreferrer">Resume</a>
 
                 </button>
             </div>
