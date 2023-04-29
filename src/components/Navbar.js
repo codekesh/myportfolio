@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 
 function Navbar() {
     const logo = require('./images/profile.jpeg')
-    const resume = "https://drive.google.com/file/d/1oKqnoJGazFDpjQqY29_CWxLvTh1Mjd9D/view?usp=sharing"
+    const resume = "https://drive.google.com/drive/u/0/folders/11Ya3b47QkQeSx1OubBF3eQ_V7iykEj2e"
     return (
         <div className="navbar">
             <NavLink to="/">
