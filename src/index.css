@@ -7,35 +7,21 @@
     font-family: "Signika Negative", sans-serif;
 }
 
-.navbar {
-    background: transparent;
-    display: flex;
-    flex-direction: row;
-    padding: 5px 0px;
-}
-
-.navbar img {
-    width: 50px;
-    border-radius: 100%;
-    margin-top: 5px;
-    margin-left: 50px;
-    transition: 0.3s ease-in-out;
-}
-
-.navbar img:hover {
-    box-shadow: 0px 0px 0px 5px #1e375a;
-}
-
 .nav-title {
     display: flex;
     flex-direction: row;
-    margin: auto 0% auto 50%;
+    margin: 3% 0% auto 45%;
+}
+
+.logo-name{
+    position: relative;
+    right: 70%;
 }
 
 .nav-link {
     margin-right: 70px;
     font-size: 25px;
-    color: #1e375a;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -62,13 +48,16 @@
 .home {
     width: 100%;
     height: 760px;
-    background-image: url("./components/images/pexels-bri-schneiter-346529.jpg");
+    z-index: -100;
+    background: url("./components/images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
     top: 0;
-    z-index: -100;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .home span,
