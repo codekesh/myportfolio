@@ -24,7 +24,7 @@ const images = [
 
 export default function Techskill() {
   return (
-    <div className="">
+    <div className="skills">
       <h1>Technical Skills</h1>
       <Skill images={images} speed={5000} />
     </div>

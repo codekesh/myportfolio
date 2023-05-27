@@ -7,13 +7,18 @@
     font-family: "Signika Negative", sans-serif;
 }
 
-.nav-title {
-    display: flex;
-    flex-direction: row;
-    margin: 3% 0% auto 45%;
+.navbar {
+    background-color: rgba(1, 41, 53, 0.5);
+    height: 80px;
 }
 
-.logo-name{
+.nav-title {
+    display: flex;
+    margin: auto 0 auto 45%;
+    padding: 20px 0;
+}
+
+.logo-name {
     position: relative;
     right: 70%;
 }
@@ -26,7 +31,12 @@
 }
 
 .nav-link:hover {
-    border-bottom: 4px solid #1e375a;
+    border-bottom: 4px solid #fff;
+}
+
+.logo-name:hover {
+    border-bottom: none;
+    opacity: 0.8;
 }
 
 .resume {
@@ -35,10 +45,10 @@
     width: 90px;
     padding: 5px 0px;
     font-size: 20px;
-    border: 2px solid #ffff;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     background: none;
-    color: #021b3d;
+    color: rgba(59, 148, 174, 1);
 }
 
 .resume:hover {
@@ -55,9 +65,39 @@
     background-size: 100%;
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+}
+
+.header {
+    display: flex;
+    margin: auto 16%;
+    width: 80%;
+    position: relative;
+    top: 20%;
+}
+
+.header img {
+    width: 200px;
+    border-radius: 20px;
+    border: 3px solid #3B95AF;
+}
+
+.describe {
+    color: #ffff;
+    display: block;
+    margin: 8% auto;
+}
+
+.hello {
+    font-size: 60px;
+    color: #3B95AF;
+}
+
+.p1 {
+    font-size: 40px;
+}
+
+.p2 {
+    font-size: 22px;
 }
 
 .home span,
@@ -67,25 +107,6 @@ h2 {
     margin: auto;
     text-align: center;
     margin-bottom: 5px;
-}
-
-.home span {
-    color: #ffff;
-    font-size: 20px;
-}
-
-.heading {
-    position: relative;
-    top: 200px;
-    color: #ffff;
-}
-
-.hello {
-    color: #ffff;
-}
-
-.heading h1 {
-    font-size: 50px;
 }
 
 .scrollImg {
@@ -129,15 +150,12 @@ section {
 .skills h1,
 .connect h1 {
     font-size: 50px;
-    color: #1e375a;
-}
-
-.heading h2 {
-    font-size: 30px;
+    color: rgb(2, 102, 124);
+    margin-bottom: 15px;
 }
 
 .skills {
-    margin-top: 45%;
+    margin-top: 30%;
 }
 
 .flex {
@@ -187,7 +205,7 @@ section {
 }
 
 .footer {
-    background-color: #92bacb;
+    background-color: rgba(1, 41, 53, 0.5);
     height: 70px;
     margin-top: 12%;
     display: flex;
@@ -244,8 +262,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1e375a;
-    border-radius: 10px;
+    background: rgb(0, 34, 44);
 }
 
 ::-webkit-scrollbar-thumb:hover {
