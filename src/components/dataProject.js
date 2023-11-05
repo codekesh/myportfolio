@@ -11,7 +11,7 @@ const data = [
         image: require('./images/RealTime.png'),
         title: 'Real-Time Chat Applications',
         describe: "I make chat Applications which can chat and have a sound after recieving and sending message with help of expressjs and SocketIO.",
-        link: "https://www.frontendmentor.io/profile/codekesh"
+        link: "https://github.com/codekesh/Real-Time-Chat-Repo.git"
     },
     {
         id: 3,
