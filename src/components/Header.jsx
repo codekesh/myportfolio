@@ -13,8 +13,8 @@ export const Header = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          height: "70vh",
-          padding: "12% 10% 10% 15%",
+          height: "30vh",
+          padding: "12% 15% 10% 10%",
           color: "white",
         }}
       >

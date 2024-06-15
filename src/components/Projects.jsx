@@ -7,7 +7,11 @@ import Project from "./Project";
 const Projects = () => {
   return (
     <>
-      <Typography variant="h4" align="center">
+      <Typography
+        variant="h3"
+        align="center"
+        sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
+      >
         Projects
       </Typography>
       <Grid container rowSpacing={1}>

@@ -26,7 +26,13 @@ const images = [
 export default function Techskill() {
   return (
     <div className="skills">
-    <Typography variant="h4" align="center">Technical Skills</Typography>
+      <Typography
+        variant="h3"
+        align="center"
+        sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
+      >
+        Technical Skills
+      </Typography>
       <Skill images={images} speed={5000} />
     </div>
   );

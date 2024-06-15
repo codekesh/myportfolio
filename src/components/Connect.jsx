@@ -1,35 +1,39 @@
 import React from "react";
-import {
-  BsInstagram,
-  BsFacebook,
-  BsTwitter,
-  BsGithub,
-  BsLinkedin,
-} from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
-
+import Typography from "@mui/material/Typography";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import MailIcon from "@mui/icons-material/Mail";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Connect() {
   return (
     <div className="connect">
-      <h1>Connect With Me</h1>
+      <Typography
+        variant="h3"
+        align="center"
+        sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
+      >
+        Connect With Me
+      </Typography>
       <div className="connection">
         <a href="https://github.com/codekesh">
-          <BsGithub size={30} className="icons" />
+          <GitHubIcon fontSize="large" style={{ margin: "2% 6%" }} />
         </a>
         <a href="https://www.linkedin.com/in/keshav-t-488684112/">
-          <BsLinkedin size={30} className="icons" />
+          <LinkedInIcon fontSize="large" style={{ margin: "2% 6%" }} />
         </a>
         <a href="mailto: 201117@iiitt.ac.in">
-          <AiOutlineMail size={30} className="icons" />
+          <MailIcon fontSize="large" style={{ margin: "2% 6%" }} />
         </a>
         <a href="https://www.instagram.com/keshavtulsiyan/">
-          <BsInstagram size={30} className="icons" />
+          <InstagramIcon fontSize="large" style={{ margin: "2% 6%" }} />
         </a>
         <a href="https://www.facebook.com/profile.php?id=100010782427183">
-          <BsFacebook size={30} className="icons" />
+          <FacebookIcon fontSize="large" style={{ margin: "2% 6%" }} />
         </a>
         <a href="https://twitter.com/tulsyan_keshav">
-          <BsTwitter size={30} className="icons" />
+          <XIcon fontSize="large" style={{ margin: "2% 6%" }} />
         </a>
       </div>
     </div>

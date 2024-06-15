@@ -10,7 +10,13 @@ import { CardActionArea } from "@mui/material";
 const Work = () => {
   return (
     <>
-    <Typography variant="h4" align="center">Experiences</Typography>
+      <Typography
+        variant="h3"
+        align="center"
+        sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
+      >
+        Experiences
+      </Typography>
       <Grid container rowSpacing={1}>
         {dataWork.map((work) => (
           <Grid key={work.id} xs={6}>
