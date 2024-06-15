@@ -12,7 +12,7 @@ function Connect() {
       <Typography
         variant="h3"
         align="center"
-        sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
+        sx={{ margin: "50px", color: "rgb(2, 102, 124)" }}
       >
         Connect With Me
       </Typography>
