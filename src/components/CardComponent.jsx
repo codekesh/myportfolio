@@ -65,7 +65,6 @@ export const CardComponent = ({ work }) => {
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <StyledCard
           className={`card ${flipped ? "flipped" : ""}`}
-          sx={{}}
           onClick={handleFlip}
         >
           <CardActionArea>

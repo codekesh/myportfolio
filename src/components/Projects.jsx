@@ -15,16 +15,9 @@ const Projects = forwardRef((props, ref) => {
         >
           Projects
         </Typography>
-        <Grid container rowSpacing={1}>
+        <Grid container justifyContent="center" rowSpacing={1}>
           {Datas.map((data) => (
-            <Grid key={data.id} xs={3}>
-              <Project
-                image={data.image}
-                title={data.title}
-                describe={data.describe}
-                link={data.link}
-              />
-            </Grid>
+            <Project key={data.id} proj={data} />
           ))}
         </Grid>
       </div>

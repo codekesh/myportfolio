@@ -1,11 +1,11 @@
 const data = [
   {
     id: 1,
-    image: require("../assets/images/frontend_mentor.png"),
-    title: "FrontendMentor",
+    image: require("../assets/images/art_gallery.png"),
+    title: "Art Gallery",
     describe:
-      "I make dozen of clones of responsive website mentioned on Frontend Mentor with the help of HTML, CSS, Bootstrap.",
-    link: "https://www.frontendmentor.io/profile/codekesh",
+      "A website where artists can sell their products and customers can buy products. This website is built with MERN stack.",
+    link: "https://github.com/codekesh/ArtGalleryFrontend.git",
   },
   {
     id: 2,
@@ -17,11 +17,11 @@ const data = [
   },
   {
     id: 3,
-    image: require("../assets/images/art_gallery.png"),
-    title: "Art Gallery",
+    image: require("../assets/images/frontend_mentor.png"),
+    title: "FrontendMentor",
     describe:
-      "A website where artists can sell their products and customers can buy products. This website is built with MERN stack.",
-    link: "https://github.com/codekesh/ArtGalleryFrontend.git",
+      "I make dozen of clones of responsive website mentioned on Frontend Mentor with the help of HTML, CSS, Bootstrap.",
+    link: "https://www.frontendmentor.io/profile/codekesh",
   },
 ];
 
