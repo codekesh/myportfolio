@@ -10,6 +10,11 @@
 .navbar {
   background-color: rgba(1, 41, 53, 0.5);
   height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(1, 41, 53, 0.5);
 }
 
 .nav-title {
@@ -24,6 +29,10 @@
   right: 70%;
 }
 
+.logo img {
+  height: 50px;
+}
+
 .nav-link {
   margin-right: 60px;
   font-size: 25px;
@@ -31,8 +40,17 @@
   text-decoration: none;
 }
 
-.nav-link:hover {
-  border-bottom: 4px solid #fff;
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .home {

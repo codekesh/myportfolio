@@ -10,6 +10,7 @@ const StyledButton = styled(Button)`
   border-radius: 10px;
   color: rgba(59, 148, 174, 1);
   padding: 5px 70px;
+  border-width: 2px;
 `;
 
 function Navbar() {
@@ -23,7 +24,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="nav-title">
-        <Link className="nav-link logo" to="/">
+        <Link className="logo" to="/">
           <img src={logo} alt="profile" />
         </Link>
         <Link className="nav-link" to="/">
@@ -35,13 +36,13 @@ function Navbar() {
         <Link className="nav-link" to="/projects">
           Projects
         </Link>
-        <Link className="nav-link" to="/projects">
+        <Link className="nav-link" to="/skills">
           Skills
         </Link>
-        <Link className="nav-link" to="/projects">
+        <Link className="nav-link" to="/about">
           About
         </Link>
-        <Link className="nav-link" to="/projects">
+        <Link className="nav-link" to="/connect">
           Connect
         </Link>
         <StyledButton variant="outlined" onClick={handleOpenResume}>

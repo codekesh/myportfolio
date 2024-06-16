@@ -8,5 +8,7 @@
 4. Add content in About
 5. Change and add the content in work
 6. Change and add the content in projects
-7. Add the content in SKills
-8. Change the logo in navbar
+7. Add the content in Skills
+8.  in navbar
+9.  in navbar button
+10. Change style in footer

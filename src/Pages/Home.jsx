@@ -24,9 +24,9 @@ function Home({ scrollTo }) {
       <Header />
       <Work ref={elementRef.current} id="work" />
       <Projects ref={elementRef.current} id="projects" />
-      <Skills />
-      <About />
-      <Connect />
+      <Skills ref={elementRef.current} id="skills" />
+      <About ref={elementRef.current} id="about" />
+      <Connect ref={elementRef.current} id="connect" />
       <Footer />
     </>
   );
