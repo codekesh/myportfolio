@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -6,9 +6,10 @@ import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-function Connect() {
+
+const Connect = forwardRef((props, ref) => {
   return (
-    <div className="connect">
+    <div ref={ref} id="connect" className="connect">
       <Typography
         variant="h3"
         align="center"
@@ -38,6 +39,6 @@ function Connect() {
       </div>
     </div>
   );
-}
+});
 
 export default Connect;

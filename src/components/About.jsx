@@ -1,16 +1,18 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Typography from "@mui/material/Typography";
 
-export const About = () => {
+export const About = forwardRef((props, ref) => {
   return (
     <>
-      <Typography
-        variant="h3"
-        align="center"
-        sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
-      >
-        About
-      </Typography>
+      <div ref={ref} id="about">
+        <Typography
+          variant="h3"
+          align="center"
+          sx={{ mt: 10, color: "rgb(2, 102, 124)" }}
+        >
+          About
+        </Typography>
+      </div>
     </>
   );
-};
+});

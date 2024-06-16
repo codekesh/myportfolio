@@ -15,7 +15,7 @@ const StyledButton = styled(Button)`
 
 function Navbar() {
   const resume =
-    "https://drive.google.com/file/d/1F6VbCxG_aLgt4CQ41s6QWQ-MO30yodKM/view?usp=sharing";
+    "https://drive.google.com/file/d/1iQeyMnsYRhw0290h3M5CSRbB5MZlH_PH/view";
 
   const handleOpenResume = () => {
     window.open(resume);

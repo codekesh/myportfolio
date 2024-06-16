@@ -8,11 +8,24 @@ import Projects from "../components/Projects";
 import { About } from "../components/About";
 
 function Home({ scrollTo }) {
-  const elementRef = useRef(null);
+  const homeRef = useRef(null);
+  const workRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const connectRef = useRef(null);
 
   useEffect(() => {
     if (scrollTo) {
-      const element = elementRef.current;
+      const sectionRefs = {
+        home: homeRef,
+        work: workRef,
+        projects: projectsRef,
+        skills: skillsRef,
+        about: aboutRef,
+        connect: connectRef,
+      };
+      const element = sectionRefs[scrollTo]?.current;
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
@@ -21,12 +34,12 @@ function Home({ scrollTo }) {
 
   return (
     <>
-      <Header />
-      <Work ref={elementRef.current} id="work" />
-      <Projects ref={elementRef.current} id="projects" />
-      <Skills ref={elementRef.current} id="skills" />
-      <About ref={elementRef.current} id="about" />
-      <Connect ref={elementRef.current} id="connect" />
+      <Header ref={homeRef} id="home" />
+      <Work ref={workRef} id="work" />
+      <Projects ref={projectsRef} id="projects" />
+      <Skills ref={skillsRef} id="skills" />
+      <About ref={aboutRef} id="about" />
+      <Connect ref={connectRef} id="connect" />
       <Footer />
     </>
   );

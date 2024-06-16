@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import profile from "../assets/images/profile.png";
 import Typography from "@mui/material/Typography";
 
-export const Header = () => {
+export const Header = forwardRef((props, ref) => {
   return (
-    <div className="header">
+    <div ref={ref} id="home" className="header">
       <div className="home"></div>
       <div
         style={{
@@ -27,4 +27,4 @@ export const Header = () => {
       <img src={profile} alt="profile" />
     </div>
   );
-};
+});

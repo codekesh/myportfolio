@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Skill from "./Skill";
 import Typography from "@mui/material/Typography";
 
@@ -23,9 +23,9 @@ const images = [
   image,
 }));
 
-export default function Techskill() {
+const Techskill = forwardRef((props, ref) => {
   return (
-    <div className="skills">
+    <div ref={ref} id="skills" className="skills">
       <Typography
         variant="h3"
         align="center"
@@ -36,4 +36,6 @@ export default function Techskill() {
       <Skill images={images} speed={5000} />
     </div>
   );
-}
+});
+
+export default Techskill;
