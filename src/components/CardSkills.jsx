@@ -11,10 +11,9 @@ const StyledCard = styled(Card)`
   width: 250px;
   height: 350px;
   transition: 0.6s;
-  margin: 10px 100px;
   text-align: center;
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
-  transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
+  transform: rotateX(70deg) translateY(-200px) translateZ(-100px);
   background: ${({ bgstart, bgend }) =>
     `linear-gradient(${bgstart}, ${bgend})`};
   &:hover {
@@ -33,12 +32,12 @@ export const CardSkills = ({ skill }) => {
       md={4}
       lg={4}
       sx={{
-        height: 100,
+        height: 120,
         transformStyle: "preserve-3d",
-        transform: "perspective(600px)",
+        transform: "perspective(900px)",
+        display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: { xs: 2, sm: 3, md: 4 },
       }}
     >
       <StyledCard bgstart={skill.bgStart} bgend={skill.bgEnd}>
@@ -48,9 +47,19 @@ export const CardSkills = ({ skill }) => {
             <Typography gutterBottom variant="h5" component="div">
               {skill.title}
             </Typography>
-            <Typography variant="body1" color="text.secondary">
-              {skill.content}
-            </Typography>
+            {skill.content.map((value, index) => (
+              <>
+                <Typography
+                  key={index}
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{ mt: 1, color: "#dfe6e9", fontSize: "20px" }}
+                >
+                  {value}
+                </Typography>
+                <hr />
+              </>
+            ))}
           </CardContent>
         </CardActionArea>
       </StyledCard>

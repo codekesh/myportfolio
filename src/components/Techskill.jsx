@@ -11,7 +11,7 @@ const Techskill = forwardRef((props, ref) => {
         <Typography
           variant="h3"
           align="center"
-          sx={{ color: "rgb(2, 102, 124)", marginTop: "50px" }}
+          sx={{ color: "rgb(2, 102, 124)", margin: "50px 0px" }}
         >
           Skills
         </Typography>
