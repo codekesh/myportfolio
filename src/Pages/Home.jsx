@@ -15,6 +15,8 @@ function Home({ scrollTo }) {
   const aboutRef = useRef(null);
   const connectRef = useRef(null);
 
+  const offsetHeight = 80;
+
   useEffect(() => {
     if (scrollTo) {
       const sectionRefs = {
@@ -27,7 +29,10 @@ function Home({ scrollTo }) {
       };
       const element = sectionRefs[scrollTo]?.current;
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const yOffset = -offsetHeight;
+        const y =
+          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     }
   }, [scrollTo]);

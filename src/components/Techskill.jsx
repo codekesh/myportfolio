@@ -1,40 +1,27 @@
 import React, { forwardRef } from "react";
-import Skill from "./Skill";
+import Grid from "@mui/material/Unstable_Grid2";
+import { CardSkills } from "./CardSkills";
+import skills from "../Datas/content_skills";
 import Typography from "@mui/material/Typography";
-
-const images = [
-  require("../assets/Programming/Bootstrap.jpeg"),
-  require("../assets/Programming/C++.png"),
-  require("../assets/Programming/C.jpg"),
-  require("../assets/Programming/CSS.png"),
-  require("../assets/Programming/ExpressJs.jpeg"),
-  require("../assets/Programming/Git.png"),
-  require("../assets/Programming/HTML.jpg"),
-  require("../assets/Programming/Javascript.jpeg"),
-  require("../assets/Programming/MongoDb.jpg"),
-  require("../assets/Programming/NodeJs.png"),
-  require("../assets/Programming/Pug.jpeg"),
-  require("../assets/Programming/Python.jpeg"),
-  require("../assets/Programming/ReactJs.jpg"),
-  require("../assets/Programming/SQL.jpg"),
-  require("../assets/Programming/Shell.jpeg"),
-].map((image) => ({
-  id: crypto.randomUUID(),
-  image,
-}));
 
 const Techskill = forwardRef((props, ref) => {
   return (
-    <div ref={ref} id="skills" className="skills">
-      <Typography
-        variant="h3"
-        align="center"
-        sx={{ margin: "50px", color: "rgb(2, 102, 124)" }}
-      >
-        Technical Skills
-      </Typography>
-      <Skill images={images} speed={5000} />
-    </div>
+    <>
+      <div ref={ref}>
+        <Typography
+          variant="h3"
+          align="center"
+          sx={{ color: "rgb(2, 102, 124)", marginTop: "50px" }}
+        >
+          Skills
+        </Typography>
+        <Grid container justifyContent="center">
+          {skills.map((skill, index) => (
+            <CardSkills key={index} skill={skill} />
+          ))}
+        </Grid>
+      </div>
+    </>
   );
 });
 

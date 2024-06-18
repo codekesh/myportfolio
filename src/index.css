@@ -7,6 +7,10 @@
   font-family: "Signika Negative", sans-serif;
 }
 
+body {
+  background-color: #dfe6e9;
+}
+
 .navbar {
   background-color: rgba(1, 41, 53, 0.5);
   height: 80px;
