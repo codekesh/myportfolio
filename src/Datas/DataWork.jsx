@@ -2,7 +2,7 @@ const dataWork = [
   {
     id: 1,
     company: "Modelon",
-    image: require("../assets/images/Work1.jpg"),
+    image: require("../assets/images/Work1.png"),
     title: "Student Intern",
     duration: "Summer Internship",
     period: "Jun 2023 - July 2023",
@@ -12,7 +12,7 @@ const dataWork = [
   {
     id: 2,
     company: "Modelon",
-    image: require("../assets/images/impact.png"),
+    image: require("../assets/images/internship2.png"),
     title: "SDE Intern",
     duration: "6 months",
     period: "since Jan 2024",

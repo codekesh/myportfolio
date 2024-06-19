@@ -28,7 +28,7 @@ export const CardComponent = ({ work }) => {
 
   const frontContent = (
     <>
-      <CardMedia component="img" height="250" image={work.image} alt="Image" />
+      <CardMedia component="img" height="230" image={work.image} alt="Image" />
       <CardContent>
         <Typography
           gutterBottom
@@ -54,7 +54,11 @@ export const CardComponent = ({ work }) => {
       <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
         {work.period}
       </Typography>
-      <Typography variant="subtitle2" sx={{fontSize:"17px"}} color="info.main">
+      <Typography
+        variant="subtitle2"
+        sx={{ fontSize: "17px" }}
+        color="info.main"
+      >
         {work.describe}
       </Typography>
     </CardContent>
