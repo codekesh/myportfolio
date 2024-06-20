@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import profile from "../assets/images/profile.png";
+import profile from "../assets/images/Avatar/profile.png";
 import Typography from "@mui/material/Typography";
 
 export const Header = forwardRef((props, ref) => {

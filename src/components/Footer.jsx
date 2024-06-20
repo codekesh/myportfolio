@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   const year = new Date().getFullYear();
-  const logo = require("../assets/images/download.jpg");
+  const logo = require("../assets/images/Avatar/india.jpg");
   return (
     <div className="footer">
       <p className="copy">

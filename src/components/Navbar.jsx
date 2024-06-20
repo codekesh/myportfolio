@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
 import { Button } from "@mui/material";
-import logo from "../assets/images/favicon-16x16.png";
+import logo from "../assets/images/Avatar/favicon-16x16.png";
 import { styled } from "@mui/material/styles";
 
 const StyledButton = styled(Button)`

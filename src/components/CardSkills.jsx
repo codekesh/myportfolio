@@ -2,7 +2,6 @@ import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -42,9 +41,19 @@ export const CardSkills = ({ skill }) => {
     >
       <StyledCard bgstart={skill.bgStart} bgend={skill.bgEnd}>
         <CardActionArea>
-          <CardMedia component="img" image={skill.image} alt={skill.title} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{
+                fontFamily: "'Sue Ellen Francisco', cursive",
+                fontWeight: 700,
+                color: "#2d3436",
+                my: 3,
+                letterSpacing: "1px",
+              }}
+            >
               {skill.title}
             </Typography>
             {skill.content.map((value, index) => (
