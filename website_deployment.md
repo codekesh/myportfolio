@@ -43,4 +43,3 @@ We will make 3 main pages admin, B2C, B2B
 - Explain tech stack
 - Timeline for deliverables
 - Development tool cost (emphasize that initially we'll try with free one)
-- Stipend of students
