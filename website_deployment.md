@@ -2,12 +2,12 @@
 
 We will make 3 main pages admin, B2C, B2B
 
-**Frontend Technology** - React.js, Next.js, Redux, etc... Free
-**Backend Technology** - Node.js, Express.js Free
-**Database Technology** - Mongodb (upto 512MB Free) $25 (5 GB) to 57$ (10 GB)
-**Cloud** - AWS
-**Repos** - Github
-**Security** - SSL Certificate
+- **Frontend Technology** - React.js, Next.js, Redux, etc... Free
+- **Backend Technology** - Node.js, Express.js Free
+- **Database Technology** - Mongodb (upto 512MB Free) $25 (5 GB) to 57$ (10 GB)
+- **Cloud** - AWS
+- **Repos** - Github
+- **Security** - SSL Certificate
 
 ## Costing
 
